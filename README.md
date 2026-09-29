@@ -22,7 +22,6 @@ A relational database for a movie streaming platform, covering users, movies, ge
 3. Run the whole script (lightning bolt icon, or `Ctrl+Shift+Enter`).
 4. Open `queries.sql` and run the queries one at a time to explore the data.
 
-> **Warning:** the script begins with `DROP DATABASE IF EXISTS moviestreaming;`. It deletes any existing database with that name before recreating it. Do not run it on a database you want to keep.
 
 ## Tables and Expected Row Counts
 
@@ -38,7 +37,7 @@ After a successful run, each table should contain:
 | `Watch_History` | Which user watched which movie, when, and for how long | 68 |
 | `Ratings` | Score and review a user gave a movie | 56 |
 
-Check with, for example: `SELECT COUNT(*) FROM Users;`. Every movie appears in `Movie_Genre` at least once (50 distinct movies).
+
 
 ## Relationships
 
