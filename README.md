@@ -61,4 +61,4 @@ All tables are in 1NF, 2NF and 3NF (and BCNF). The step-by-step proof with funct
 
 ## Front End
 
-The front end is in progress and currently works with the sample data above.
+The front end is in progress and currently works with the sample data above..
