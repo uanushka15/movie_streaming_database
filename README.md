@@ -1,13 +1,13 @@
-# Movie Streaming Database
+# Movie Streaming Database -
 
 A relational database for a movie streaming platform, covering users, movies, genres, subscriptions, watch history and ratings. This repository contains the database design, documentation and sample data; the front end is under development.
 
-## Tools Used
+## Tools Used -
 
 - MySQL Workbench
 - MySQL 8.0.16 or newer (needed so the `CHECK` constraints are enforced; older versions silently ignore them)
 
-## Repository Contents
+## Repository Contents -
 
 | File / Folder | Description |
 |---|---|
@@ -15,7 +15,7 @@ A relational database for a movie streaming platform, covering users, movies, ge
 | `queries.sql` | Example queries that demonstrate the tables working together |
 | `docs/` | ER diagram, database schema, entity relationships, functional dependencies and normalization |
 
-## How to Run
+## How to Run -
 
 1. Open **MySQL Workbench** and connect to your local MySQL server.
 2. Open `moviestreaming_database.sql` (File → Open SQL Script).
@@ -23,7 +23,7 @@ A relational database for a movie streaming platform, covering users, movies, ge
 4. Open `queries.sql` and run the queries one at a time to explore the data.
 
 
-## Tables and Expected Row Counts
+## Tables and Expected Row Counts -
 
 After a successful run, each table should contain:
 
@@ -39,7 +39,7 @@ After a successful run, each table should contain:
 
 
 
-## Relationships
+## Relationships -
 
 - **Users ↔ Subscription:** each subscription belongs to one user (`Subscription.user_id`).
 - **Users ↔ Movies (watches):** many-to-many through `Watch_History`.
@@ -48,17 +48,17 @@ After a successful run, each table should contain:
 
 Load order matters because of foreign keys: `Users`, `Movies` and `Genres` first, then `Movie_Genre`, `Subscription`, `Watch_History` and `Ratings`. The script already follows this order.
 
-## Normalization
+## Normalization -
 
 All tables are in 1NF, 2NF and 3NF (and BCNF). The step-by-step proof with functional dependencies is in the `docs/` folder.
 
-## Notes About the Data
+## Notes About the Data -
 
 - All data is **sample data** created for demonstration.
 - Emails use the `example.com` domain, and the values in the `password` column are **dummy strings, not real credentials or real hashes**.
 - Movie titles are real, but durations, ratings, reviews, subscriptions and viewing activity are illustrative.
 - `Movies.rating` is a catalogue rating, while `Ratings.score` is the score given by the platform's own users. They are stored separately and are not derived from each other.
 
-## Front End
+## Front End -
 
 The front end is in progress and currently works with the sample data above.
