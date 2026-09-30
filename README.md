@@ -5,7 +5,6 @@ A relational database for a movie streaming platform, covering users, movies, ge
 ## Tools Used -
 
 - MySQL Workbench
-- MySQL 8.0.16 or newer (needed so the `CHECK` constraints are enforced; older versions silently ignore them)
 
 ## Repository Contents -
 
