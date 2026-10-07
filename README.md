@@ -58,6 +58,3 @@ All tables are in 1NF, 2NF and 3NF (and BCNF). The step-by-step proof with funct
 - Movie titles are real, but durations, ratings, reviews, subscriptions and viewing activity are illustrative.
 - `Movies.rating` is a catalogue rating, while `Ratings.score` is the score given by the platform's own users. They are stored separately and are not derived from each other.
 
-## Front End -
-
-The front end is in progress and currently works with the sample data above.
